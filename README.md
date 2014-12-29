@@ -29,7 +29,7 @@ import (
 )
 
 func TestSomething(t *testing.T) {
-	So := cassert.New(t)
+	So := cassert.NewSo(t)
 	So(5, cassert.ShouldEqual, 5)
 	So(true, cassert.ShouldBeTrue)
 }
